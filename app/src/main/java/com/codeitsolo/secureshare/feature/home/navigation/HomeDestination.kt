@@ -1,10 +1,15 @@
 package com.codeitsolo.secureshare.feature.home.navigation
 
-import com.codeitsolo.secureshare.navigation.Destination
 import kotlinx.serialization.Serializable
 
+/**
+ * Represents the home route
+ */
 @Serializable
-data object HomeRoute : Destination
+data object HomeRoute
 
+/**
+ * Represents the home destination
+ */
 @Serializable
-data object Home : Destination
+data object Home

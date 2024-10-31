@@ -1,6 +1,6 @@
 package com.codeitsolo.secureshare.di
 
-import com.codeitsolo.secureshare.feature.home.navigation.HomeRoute
+import com.codeitsolo.secureshare.feature.onboarding.navigation.OnboardingRoute
 import com.codeitsolo.secureshare.navigation.navigator.Navigator
 import com.codeitsolo.secureshare.navigation.navigator.NavigatorImpl
 import dagger.Module
@@ -9,6 +9,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
+/**
+ * App Module
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
@@ -17,7 +20,7 @@ object AppModule {
     @Provides
     fun provideNavigator(): Navigator {
         return NavigatorImpl(
-            startDestination = HomeRoute
+            startDestination = OnboardingRoute
         )
     }
 }

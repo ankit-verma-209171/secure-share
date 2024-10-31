@@ -6,7 +6,11 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.codeitsolo.secureshare.feature.home.HomeRoute
+import com.codeitsolo.secureshare.feature.onboarding.navigation.OnboardingRoute
 
+/**
+ * Represents the home navigation graph
+ */
 fun NavGraphBuilder.homeNavigation() {
 
     navigation<HomeRoute>(

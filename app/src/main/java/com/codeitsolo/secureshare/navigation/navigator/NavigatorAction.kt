@@ -1,13 +1,21 @@
 package com.codeitsolo.secureshare.navigation.navigator
 
 import androidx.navigation.NavOptionsBuilder
-import com.codeitsolo.secureshare.navigation.Destination
 
+/**
+ * Represents a navigation action
+ */
 sealed interface NavigationAction
 
+/**
+ * Navigates to a destination
+ */
 data class Navigate(
-    val destination: Destination,
+    val destination: Any,
     val navOptions: NavOptionsBuilder.() -> Unit = {}
 ) : NavigationAction
 
+/**
+ * Navigates up
+ */
 data object NavigateUp : NavigationAction

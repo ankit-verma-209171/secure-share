@@ -1,17 +1,36 @@
 package com.codeitsolo.secureshare.navigation.navigator
 
 import androidx.navigation.NavOptionsBuilder
-import com.codeitsolo.secureshare.navigation.Destination
 import kotlinx.coroutines.flow.Flow
 
+/**
+ * Represents a navigator
+ */
 interface Navigator {
-    val startDestination: Destination
+
+    /**
+     * Start destination of the navigator
+     */
+    val startDestination: Any
+
+    /**
+     * Flow of navigation actions
+     */
     val navigationActions: Flow<NavigationAction>
 
+    /**
+     * Navigates to a destination
+     *
+     * @param destination Destination to navigate to
+     * @param navOptions Navigation options
+     */
     suspend fun navigate(
-        destination: Destination,
+        destination: Any,
         navOptions: NavOptionsBuilder.() -> Unit = {}
     )
 
+    /**
+     * Navigates up
+     */
     suspend fun navigateUp()
 }

@@ -1,4 +1,4 @@
-package com.codeitsolo.secureshare.feature.home
+package com.codeitsolo.secureshare.feature.onboarding
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material3.Text
@@ -6,24 +6,24 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 /**
- * Home route to show home screen.
+ * Onboarding route to show onboarding screen.
  *
  * @param modifier The Modifier to be applied to this composable
  */
 @Composable
-fun HomeRoute(modifier: Modifier = Modifier) {
+fun OnboardingRoute(modifier: Modifier = Modifier) {
     Box(modifier) {
-        Text("Home Screen")
+        Text("Onboarding screen")
     }
 }
 
 /**
- * A standalone screen to show the home screen.
+ * A standalone screen to show the onboarding screen.
  *
  * @param modifier The modifier needed to be applied to the composable
  */
 @Composable
-private fun HomeScreen(
+private fun OnboardingScreen(
     modifier: Modifier = Modifier
 ) {
 

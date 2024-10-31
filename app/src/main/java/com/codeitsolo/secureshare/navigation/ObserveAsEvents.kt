@@ -9,6 +9,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 
+/**
+ * A component to observe as a flow of events.
+ */
 @Composable
 fun <T> ObserveAsEvents(
     flow: Flow<T>,
