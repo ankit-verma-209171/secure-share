@@ -74,6 +74,8 @@ dependencies {
 
     implementation(libs.core.splash.screen)
 
+    implementation(libs.accompanist.permissions)
+
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
