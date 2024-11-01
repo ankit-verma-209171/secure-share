@@ -76,6 +76,11 @@ dependencies {
 
     implementation(libs.accompanist.permissions)
 
+    implementation(libs.androidx.paging.compose)
+    implementation(libs.androidx.paging.common)
+
+    implementation(libs.coil.kt.compose)
+
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
